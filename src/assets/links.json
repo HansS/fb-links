@@ -1,0 +1,7 @@
+{
+  "links": [
+    { "id": "1", "title": "Name 1", "url": "https://www.google.com" },
+    { "id": "2", "title": "Name 2", "url": "https://www.google.com" },
+    { "id": "3", "title": "Name 3", "url": "https://www.google.com" }
+  ]
+}
