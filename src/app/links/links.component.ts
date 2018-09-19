@@ -1,7 +1,7 @@
 import { Observable, Subscription } from "rxjs";
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { LinkService } from "./link.service";
-import { Link } from "./link.model";
+import { Link } from "./state/link.model";
 
 @Component({
   selector: "hs-links",

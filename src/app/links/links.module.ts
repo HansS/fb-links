@@ -12,8 +12,24 @@ import { LinkDetailsComponent } from "./components/link-details/link-details.com
 import { LinkService } from "./link.service";
 import { LinkListitemComponent } from "./components/link-listitem/link-listitem.component";
 
+import { StoreModule } from "@ngrx/store";
+import { EffectsModule } from "@ngrx/effects";
+import { LinkEffects } from "./entities/link.effects";
+import * as fromLinks from "./entities/links.reducer";
+import * as fromLink from "./state/link.reducer";
+
+// import { LinkEffects } from "./state/link.effects";
+
 @NgModule({
-  imports: [CommonModule, FormsModule, HttpClientModule, LinksRoutingModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    LinksRoutingModule,
+    StoreModule.forFeature("link", fromLink.reducer),
+    EffectsModule.forFeature([LinkEffects]),
+    StoreModule.forFeature("links", fromLinks.reducer)
+  ],
   declarations: [
     LinksComponent,
     LinkListComponent,

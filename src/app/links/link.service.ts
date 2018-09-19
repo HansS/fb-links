@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Link } from "./link.model";
+import { Link } from "./state/link.model";
 import {
   AngularFirestoreDocument,
   AngularFirestore,

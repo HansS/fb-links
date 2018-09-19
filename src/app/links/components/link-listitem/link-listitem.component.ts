@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Link } from "../../link.model";
+import { Link } from "../../state/link.model";
 
 @Component({
   selector: "link-listitem",
